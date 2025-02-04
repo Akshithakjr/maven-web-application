@@ -95,10 +95,9 @@
 	<distributionManagement>
 	
 	    <repository>
-	      <id>nexus</id>
+	      <id>nexus-snapshots</id>
 	      <name>Mithun Technologies Releases Nexus Repository</name>
 	      <url>http://172.31.32.73:8081/repository/canarabank-snapshot/</url>
-		    <versionPolicy>ignore</versionPolicy>
 	    </repository>
 	    
 	    <snapshotRepository>
