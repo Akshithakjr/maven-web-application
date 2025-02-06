@@ -14,6 +14,7 @@ git credentialsId: 'github_cred', url: 'https://github.com/Akshithakjr/maven-web
 stage('build'){
 sh "${mavenHome}/bin/mvn clean package"
 }
+/*
 stage('Sonarqubereport'){
 sh "${mavenHome}/bin/mvn clean sonar:sonar"
 }
@@ -26,4 +27,5 @@ sshagent(['8d11d3f8-002a-4f75-bd26-31344a882b3d']) {
 sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@172.31.40.69:/opt/apache/webapps/"
 }
 }
+*/
 }
